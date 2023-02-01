@@ -1,11 +1,9 @@
-import Algorithms.BubbleSortAlgorithm;
-import Algorithms.InsertionSortAlgorithm;
+import CodingChallenges.Permutations;
 
 public class Main {
 
     public static void main(String[] arg) {
-        BubbleSortAlgorithm.bubbleSort();
-        InsertionSortAlgorithm.insertionSort();
+        Permutations.permutation("12");
     }
 
 }

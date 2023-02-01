@@ -4,15 +4,16 @@ import java.util.Scanner;
 
 public class FibonacciSequence {
 
-    public static void fibonacciSequence() {
+    //use for loop in main method with iterator variable starting at 1
+    public static int fibonacciSequence(int num) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please provide a number for end of fibonacci sequence: ");
-        Integer num = scanner.nextInt();
-        scanner.close();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Please provide a number for end of fibonacci sequence: ");
+//        Integer num = scanner.nextInt();
+//        scanner.close();
 
         if (num == 1 || num == 2) {
-            System.out.println(1);
+            return 1;
         }
 
         Integer fibonacci = 1, fibo1 = 1, fibo2 = 1;
@@ -20,8 +21,8 @@ public class FibonacciSequence {
             fibonacci = fibo1 + fibo2;
             fibo1 = fibo2;
             fibo2 = fibonacci;
-            System.out.println(fibonacci);
         }
+        return fibonacci;
     }
 
 }
