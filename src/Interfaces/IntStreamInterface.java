@@ -48,4 +48,12 @@ public class IntStreamInterface {
         System.out.println("IntStream to Set : "+set);
     }
 
+    //IntStream can also be used on non integer types
+    public static boolean pangramCheck(String sentence) {
+        return sentence.chars().map(Character::toLowerCase)
+                .filter(Character::isAlphabetic)
+                .distinct()
+                .count() == 26;
+    }
+
 }
