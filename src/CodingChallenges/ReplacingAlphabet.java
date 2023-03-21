@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class ReplacingAlphabet {
 
-    public static void replaceAlphabetPosition(String str) {
+    public static String replaceAlphabetPosition(String str) {
         String strLower = str.toLowerCase();
         Map<Integer, String> position = new HashMap<>();
         position.put(1, "a"); position.put(2, "b"); position.put(3, "c"); position.put(4, "d"); position.put(5, "e"); position.put(6, "f");
@@ -28,7 +28,8 @@ public class ReplacingAlphabet {
             });
 
         }
-        System.out.println(sb.toString());
+        //System.out.println(sb.toString());
+        return sb.toString().trim();
     }
 
 }

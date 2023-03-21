@@ -2,8 +2,8 @@ package CodingChallenges;
 
 public class ReverseWordsInString {
 
-    public static void reverseWordsInString() {
-        String str = "Happy New Year, Cashlynn!";
+    public static String reverseWordsInString(String str) {
+        //String str = "Happy New Year, Cashlynn!";
         String [] strSplit = str.trim().split("\\s");
         StringBuilder sb = new StringBuilder();
 
@@ -12,6 +12,7 @@ public class ReverseWordsInString {
         }
 
         System.out.println(sb.toString());
+        return sb.toString().trim();
     }
 
 }

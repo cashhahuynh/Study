@@ -9,7 +9,7 @@ public class MorseCode {
 
     //need to work on whitespaces
     public static String translation(String str) {
-        str = str.replaceAll("\\s+", " ");
+        str = str.replaceAll("\\s+", " ").trim();
         String [] strArr = str.split("[\\s]");
 
         return Arrays.asList(strArr).stream()
