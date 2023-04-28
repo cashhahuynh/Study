@@ -22,7 +22,6 @@ public class StackDataStructure {
             System.out.println("underflow");
             return top;
         } else {
-            System.out.println("pop: " + arr[top--]);
             return (arr[top--]);
         }
 
@@ -51,7 +50,6 @@ public class StackDataStructure {
         if(top==-1) {
             return top;
         } else {
-            System.out.println("peek: " + arr[top]);
             return arr[top];
         }
 
