@@ -1,6 +1,5 @@
 package Data.DataStructures.BinarySearchTree;
 
-//
 public class BinarySearchTree {
 
     Node root;
