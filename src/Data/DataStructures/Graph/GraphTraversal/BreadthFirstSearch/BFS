@@ -1,0 +1,2 @@
+The traversal starts from the source node and scans its neighboring nodes.
+It traverses horizontally and visits all nodes of the current layer.
